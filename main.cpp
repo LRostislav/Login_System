@@ -5,5 +5,5 @@
 using namespace std;
 
 bool IsLoggedIn(){
-    
+    cout << "Enter username: ";
 }
