@@ -13,8 +13,8 @@ bool IsLoggedIn()
     cout << "Enter password: ";
     cin >> password;
 
-    ifstream read("data\\" + username + ".txt");
-    getline(read,un);   // read username
+    ifstream read("c:\\" + username + ".txt");
+    getline(read, un);   // read username
     getline(read, pw);  // read password
 
     if (un == username && pw == password)
@@ -39,14 +39,14 @@ int main()
     {
         string username, password;
 
-        cout << "select a username";
+        cout << "Select a username: ";
         cin >> username;
 
-        cout << "select a password";
+        cout << "Select a password: ";
         cin >> password;
 
         ofstream file;
-        file.open("data\\" + username + ".txt");
+        file.open("c:\\" + username + ".txt");
         file << username << endl << password;
         file.close();
 
